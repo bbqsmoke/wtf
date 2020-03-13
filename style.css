@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    line-height: 1.6;
+    text-align: center;
+    background-image: url('yo.png');
+    overflow: hidden;
+    background-position: center;
+    min-height: 200px;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    object-position: center;
+    object-fit: cover;
+}
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding: 20px 30px;
+}
+#showcase{
+    height: 100px;
+}
+#showcase h1{
+    font-size: 50px;
+    position: relative;
+    line-height: 1.6;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    font-style: italic;
+    text-decoration: underline;
+    color: orange;
+}
+
+@keyframes heading{
+    0%{
+        top: -50px;
+    }
+    100%{
+        top: 30px;
+    }
+}
+#content{
+    position: relative;
+    animation: con;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    color: yellow;
+    font-weight: bolder;
+}
+@keyframes con{
+    0%{
+        left: -1000px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.btn{
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: white 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    animation: bt;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    
+}
+.btn:hover{
+    transform: rotateY(360deg);
+}
+@keyframes bt{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
