@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     object-fit: cover;
+    max-width: 100%;
+    height: auto;
     
 }
 body{
@@ -13,12 +15,7 @@ body{
     background-image: url('yo.png');
     overflow: hidden;
     background-position: center;
-    min-height: 200px;
-    height: 100%;
-    width: 100%;
-    background-attachment: fixed;
-    object-position: center;
-    object-fit: cover;
+    
 }
 .container{
     max-width: 960px;
